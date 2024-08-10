@@ -1,0 +1,75 @@
+/* Overview.css */
+
+.overview-container {
+    position: absolute;
+    width: 308px;
+    height: 222px;
+    left: 20px;
+    top: 170px; 
+    z-index: 1; /* Ensure overview is below the navbar */
+    
+    filter: drop-shadow(0px 1px 9px #9b7272);
+    
+    /* Glassmorphism */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 14px;
+  
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(201,218,237,1) 75%);
+    backdrop-filter: blur(75px);
+    border-radius: 32px;
+  }
+  
+  /* Left Side */
+  .overview-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 135px;
+    height: 198px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+  
+  /* Right Side */
+  .overview-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    width: 135px;
+    height: 198px;
+  }
+  
+  /* Right Top Container - Progress */
+  .right-top {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 135px;
+    height: 63px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+  
+  /* Right Bottom Container - Bubble */
+  .right-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 115px;
+    height: 130px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+  

@@ -1,0 +1,98 @@
+/* Navbar.css */
+
+/* Container for the entire navbar */
+.navbar {
+    position: relative;
+    width: 308px;
+    z-index: 10; /* Ensure navbar is on top */
+  }
+  
+  /* First Layer: Dashboard Headline & Profile Icon */
+  .navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 112px;
+    width: 100%;
+    height: 10px;
+    z-index: 10; /* Ensure header is on top */
+  }
+  
+  /* Headline Text */
+  .navbar-title {
+    margin: 0 auto;
+    width: 207px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-feature-settings: 'ss06' on;
+    color: #003F5F;
+  }
+  
+  /* Profile Icon */
+  .navbar-profile-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-profile-icon img {
+    width: 50px; /* Adjusted size for consistency */
+    height: 50px; 
+    border-radius: 50%;/* Adjusted size for consistency */
+  }
+  
+  /* Second Layer: Search Bar & Notifications */
+  .navbar-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    gap: 4px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 40px; 
+  }
+  
+  /* Search Bar */
+  .navbar-search-bar {
+    width: 234px;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px  #ccc;
+    
+  }
+  
+  /* Notification Icon */
+  .navbar-notification-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .navbar-notification-icon img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+  }
+  
