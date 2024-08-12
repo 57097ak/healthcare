@@ -1,52 +1,50 @@
- .appointment-container {
-    width: 300px;
-    height: 416px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    z-index: 2;
-    position: relative;
-    margin-top: 400px;
-  }
-  
-  .appointment-heading {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #003F5F;
-  }
-  
-  .appointment-content-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px;
-    gap: 24px;
-    position: absolute;
-    width: 260px;
-    height: 366px;
-    left: 0;
-    top: 52px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px #DADADA;
-    border-radius: 32px;
-  }
-  
-.appointment-card {
+/* General Styles for Uniformity */
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #003F5F;
+  margin-right: 4px; /* Small gap between label and value */
+}
+
+.value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #003F5F;
+}
+
+/* Appointment Container */
+.appointment-container {
+  width: 300px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+  position: relative;
+  margin-top: 400px;
+}
+
+.appointment-heading {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #003F5F;
+}
+
+.appointment-content-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 32px;
-  gap: 24px;
-  width: 308px;
-  height: 366px;
+  gap: 16px; /* Reduced gap to make fields closer */
   position: absolute;
-  left: 0px;
+  width: 260px;
   top: 52px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px #dadada;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px #DADADA;
   border-radius: 32px;
 }
 
@@ -54,120 +52,88 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  width: 244px;
-  height: 72px;
+  gap: 4px; /* Reduced gap for consistency */
 }
 
 .doctor-name {
-  width: 128px;
-  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.5px;
-  color: #003f5f;
+  color: #003F5F;
+  margin-bottom: 4px; /* Added margin to separate from designation */
 }
 
 .doctor-designation {
-  width: 62px;
-  height: 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 10 px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.5px;
-  color: #003f5f;
+  font-size: 12px;
+  color: #003F5F;
 }
 
-.contact-info {
+.doctor-contact {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #003F5F;
+}
+
+/* Date & Time Section */
+.date-time-section {
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  width: 202px;
-  height: 6px;
+  align-items: center; /* Center-aligns the labels and values */
+  gap: 16px; /* Reduced gap */
 }
 
-.contact-item {
+.date, .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px; /* Reduced gap between label and value */
+}
+
+/* Address Section */
+.address-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px; /* Reduced the gap */
+}
+
+.address {
+  display: flex;
+  flex-direction: row; /* Places label and value side by side */
+  align-items: center;
+}
+
+.google-maps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px; /* Adds a small gap between the SVG and text */
+}
+
+.open-google-maps {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 10px;
-  color: #003f5f;
+  width: 22px;
+  height: 22px;
 }
-/* Outer Container */
-.outer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 84px;
-    width: 248px;
-    height: 142px;
-  }
-  
-  /* Date & Time Section */
-  .date-time-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    width: 248px;
-    height: 48px;
-  }
-  
-  .date {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 81px;
-    height: 48px;
-  }
-  
-  .time {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 38px;
-    height: 48px;
-  }
-  
-  /* Address Section */
-  .address-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 248px;
-    height: 70px;
-  }
-  
-  .address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 215px;
-    height: 46px;
-  }
-  
-  .google-maps .open-google-maps {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    width: 96px;
-    height: 22px;
-  }
-  
+
+.google-maps-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #007BFF;
+}
+
+.icons-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 10px;
+  width: 244px;
+  height: 40px;
+  margin-top: 16px; /* Optional: Adjust to add space between address and icons */
+}

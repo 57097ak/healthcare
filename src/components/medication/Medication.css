@@ -1,0 +1,173 @@
+/* Medication Section */
+.medication-section {
+    width: 308px;
+    height: 390px; /* Adjusted to fit content and reminder */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;
+    margin-top: 470px;
+    position: relative;
+  }
+  
+  /* Medication Heading */
+  .medication-heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #003F5F;
+    margin-bottom: 16px; /* Add spacing below heading */
+  }
+  
+  /* Medication Content Box */
+  .medication-content-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:18px;
+    gap: 26px;
+    position: absolute;
+    width: 320px;
+    height: 281px; /* Adjust height to fit content */
+    left: 0px;
+    top: 52px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px #DADADA;
+    border-radius: 32px;
+  }
+  
+  /* Medication Header & Image Container */
+  .medication-header-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 244px;
+    height: 119px;
+  }
+  
+  /* Medication Header */
+  .medication-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 12px 0px 0px;
+    gap: 8px;
+    width: 135px;
+    height: 92px;
+  }
+  
+  /* Medication Header Title */
+  .medication-header-title {
+    width: 68px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #003F5F;
+  }
+  
+  /* Medication Details */
+  .medication-details {
+    width: 123px;
+    height: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #003F5F;
+  }
+  
+  /* Medication Image */
+  .medication-image {
+    width: 114px;
+    height: 119px;
+    background: url('../../assests/ASS\ 500mg.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 22px;
+  }
+  
+  /* Bottom Section (e.g., 2x Daily) */
+  .medication-bottom-section {
+    width: 123px;
+    height: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    color: #003F5F;
+  }
+  
+  /* Reminder Section */
+.reminder-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 31px;
+    width: 244px;
+    height: 56px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  /* Reminders Header & Icon */
+  .reminder-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    width: 75px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* Reminder Time */
+  .reminder-time {
+    width: 103px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #003F5F;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px #DADADA;
+    border-radius: 12px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  
